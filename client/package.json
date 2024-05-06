@@ -1,18 +1,13 @@
 {
-  "name": "googlebooks-app",
+  "name": "googlebooks-client",
   "version": "1.0.0",
-  "description": "",
-  "main": "server/server.js",
+  "description": "Client for the Google Books App",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node server/server.js",
-    "develop": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && npm run watch",
-    "client": "cd client && npm start",
-    "heroku-postbuild": "npm run build",
-    "install-deps": "npm run install-server && npm run install-client",
-    "install-server": "cd server && npm install",
-    "install-client": "cd client && npm install",
-    "build": "cd client && npm run build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "engines": {
     "node": "20.11.0",
@@ -23,7 +18,10 @@
   "license": "MIT",
   "dependencies": {
     "apollo-client": "^2.6.10",
-    "graphql": "^15.5.2"
+    "graphql": "^15.5.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
