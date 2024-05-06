@@ -1,60 +1,68 @@
-# 21-MERN-Book-Search-Engine
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Table of Contents-
-- [21-MERN-Book-Search-Engine](#21-mern-book-search-engine)
-  - [Table of Contents-](#table-of-contents-)
-  - [Licensing](#licensing)
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Screenshots](#screenshots)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [Contributing](#contributing)
-  - [Testing](#testing)
-  - [Additional Info](#additional-info)
+## Available Scripts
 
-## Licensing
+In the project directory, you can run:
 
-[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+### `yarn start`
 
-Link: [MIT License](https://opensource.org/licenses/MIT)
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Description
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-This is a MERN stack (MongoDB, Express.js, React.js, Node.js) application that searches Google Books for a given book title, then displays the results. It has a user login function that then provides a method to save desired book titles from the search results to the logged in user's account. The internal database API functions are provided through a GraphQL API using Apollo Server. Security for app is provided by JSON Web Tokens and the `jwt-decode` module for the client side.
+### `yarn test`
 
-## Installation
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-NOTE: As of November 2022, Heroku has no "free" accounts, so the demo application has been taken offline until another suitable host can be found.
+### `yarn build`
 
-## Screenshots
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-![screenshot1](./assets/screenshot1.png)
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-![screenshot2](./assets/screenshot2.png)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![screesnhot3](./assets/screenshot3.png)
+### `yarn eject`
 
-## Usage
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-As of November 2022, Heroku has no "free" accounts, so the demo application has been taken offline until another suitable host can be found.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Credits
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-[React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-[Apollo Client](https://www.apollographql.com/apollo-client) - A framework for binding data to your UI with GraphQL.
+## Learn More
 
-## Contributing
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-  [Contributor Covenant](https://www.contributor-covenant.org/)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Testing
+### Code Splitting
 
-  No testing is provided.
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-## Additional Info
+### Analyzing the Bundle Size
 
-- Github: [cliff-rosenberg](https://github.com/cliff-rosenberg)
-- Email: cliff459 AT icloud.com
-- I received help from someone elses github
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

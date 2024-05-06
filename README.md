@@ -1,56 +1,98 @@
-# 21-MERN-Book-Search-Engine
-
-## Table of Contents-
-- [21-MERN-Book-Search-Engine](#21-mern-book-search-engine)
-  - [Table of Contents-](#table-of-contents-)
-  - [Licensing](#licensing)
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Screenshots](#screenshots)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [Contributing](#contributing)
-  - [Testing](#testing)
-  - [Additional Info](#additional-info)
-
-## Licensing
-
-[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
-
-Link: [MIT License](https://opensource.org/licenses/MIT)
+# MERN: Book Search Engine
 
 ## Description
 
-This is a MERN stack (MongoDB, Express.js, React.js, Node.js) application that searches Google Books for a given book title, then displays the results. It has a user login function that then provides a method to save desired book titles from the search results to the logged in user's account. The internal database API functions are provided through a GraphQL API using Apollo Server. Security for app is provided by JSON Web Tokens and the `jwt-decode` module for the client side.
+For this project I was given starter code with a fully functioning Google Books API search engine built with a RESTful API, and refactored it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It was set up to allow users to save book searches to the back end.
 
+In order for this application to use a GraphQL API, I refactored the API to use GraphQL on the back end and added some functionality to the front end. I was given specifications containing details about the files I needed to modify on the back end and the front end.
 
+To complete this project, I did the following:
 
-## Screenshots
+1. Set up an Apollo Server to use GraphQL queries and mutations to fetch and modify data.
 
-![screenshot1](./assets/screenshot1.png)
+2. Modify the existing authentication middleware so that it works in the context of a GraphQL API.
 
-![screenshot2](./assets/screenshot2.png)
+3. Create an Apollo Provider so that requests can communicate with an Apollo Server.
 
-![screesnhot3](./assets/screenshot3.png)
+4. Deploy your application to Heroku with a MongoDB database using MongoDB Atlas.
+
+## User Story
+
+```md
+AS AN avid reader
+I WANT to search for new books to read
+SO THAT I can keep a list of books to purchase
+```
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Badges](#badges)
+- [License](#license)
+- [Copyright](#copyright)
+- [Testing](#testing)
+
+## Installation
+
+For installation of the dependencies, please run the following command in the terminal:
+
+```
+npm i
+```
 
 ## Usage
 
-As of November 2022, Heroku has no "free" accounts, so the demo application has been taken offline until another suitable host can be found.
+To start the application click the following link: <br>
+https://warm-hamlet-10117.herokuapp.com/
+
+Alternately type the following command in the terminal:
+
+```
+npm start
+```
+
+Application screenshot:
+
+![MERN Book Search Engine](https://user-images.githubusercontent.com/97859682/221171412-be5aeaa7-c835-4bc1-bf2f-763da0cb1469.png)
 
 ## Credits
 
-[React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
+N/A
 
-[Apollo Client](https://www.apollographql.com/apollo-client) - A framework for binding data to your UI with GraphQL.
+## License
 
-## Contributing
+![License badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
-  [Contributor Covenant](https://www.contributor-covenant.org/)
+## Badges
+
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-informational?style=for-the-badge&logo=html5)
+![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![NPM](https://img.shields.io/badge/npm-yellow?style=for-the-badge&logo=NPM)
+![Heroku](https://img.shields.io/badge/Heroku-purple?style=for-the-badge&logo=heroku)
+![EXPRESS.js](https://img.shields.io/badge/express-JS-yellow?style=for-the-badge&logo=experts-exchange)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+## How to Contribute
+
+Tim Fleck<br />
+Full-Stack Developer<br />
+![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+[CHUCA78](https://github.com/Chuca78)<br />
+tfleck78@gmail.com
+
+## Copyright
+
+Copyright 2023 Tim Fleck
 
 ## Testing
 
-  No testing is provided.
+For running the tests on application, please run the following command:
 
-## Additional Info
-
-
+```
+N/A
+```

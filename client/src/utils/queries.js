@@ -1,22 +1,19 @@
-// setup for React and Apollo Client
-import { gql } from '@apollo/client';
+// This will hold the query `GET_ME`, which will execute the `me` query set up using Apollo Server.
+import gql from "graphql-tag";
 
-// setup for User data and any saved book data
-// loads in 'SavedBooks.js'
 export const GET_ME = gql`
   {
     me {
       _id
       username
       email
-      bookCount
       savedBooks {
         bookId
         authors
         description
-        title
         image
         link
+        title
       }
     }
   }
